@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Blogr</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="hero">
+            <div class="nav" id="nav">
+                <img src="img/logo.svg" class="brand" alt="">
+                <nav id="main-nav">
+                    <ul class="main-nav-items">
+                        <li class="main-nav-item">
+                            <a href="#" class="main-item">Product
+                                <ul class="dropdown">
+                                    <li><a href="">Overview</a></li>
+                                    <li><a href="">Pricing</a></li>
+                                    <li><a href="">Marketplace</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">Integrations</a></li>
+                                </ul>
+                            </a></li>
+                        <li class="main-nav-item">
+                            <a href="#" class="main-item">Company
+                                <ul class="dropdown">
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Careers</a></li>
+                                </ul>
+                        </a></li>
+                        <li class="main-nav-item">
+                            <a href="#" class="main-item">Connect</a>
+                            <ul class="dropdown">
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Newsletter</a></li>
+                                <li><a href="">LinkedIn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="login main-nav-item">
+                        <a href="" class="btn btn-login">Login</a>
+                        <a href="" class="btn btn-third mobile-button">Sign Up</a>
+                    </div>
+
+                </nav>    
+                <a href="#" onclick="displayMenu()">
+                    <img src="img/icon-hamburger.svg" class="hamburger" id="hamburger" alt="">
+                    <img src="img/icon-close.svg" class="hamburger-close" alt="">
+                </a>
+            </div>
+            <div class="hero-texts">
+                <h1><span>A modern </span> publishing platform</h1>
+                <h2>Grow your audience and build your online brand</h2>
+                <div class="btn-wrapper">
+                    <a href="" class="btn btn-primary">Start for Free</a>
+                    <a href="" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+
+        <section id="about">
+            <div class="about-img">            
+                <img src="img/illustration-editor-desktop.svg" class="editor-desktop"  alt="">
+            </div>
+            <h1>Designed for the future</h1>
+            <div class="about">
+                <img src="img/illustration-editor-mobile.svg" class="editor-mobile" alt="">
+                <div class="text-block">
+                    <h2>Introducing an extensible editor</h2>
+                    <p>Blogr features an exceedingly intuitive interface 
+                        which lets you focus on one thing: creating conten. 
+                        The editor supports management of multiple blogs and
+                         allow easy manipulation of embeds such as images, videos
+                         , and Markdown. Extensiblitity with plugins and themes 
+                         provide easy ways to add functionality or change the looks of a blog.
+                    </p>
+
+                    <h2>Robust content management</h2>
+                    <p>Flexible content management enables users
+                         to easily move through posts. Increase
+                          the usabitlity of your blog by adding 
+                          customized categories, setions, formats
+                           or flow. With this functionality, 
+                           you're in full control.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- app -->
+        <div class="appimg">
+            <img src="img/illustration-phones.svg" class="phones" alt="">
+        </div>
+        <section id="app">
+            <div class="app">
+                <div class="text-block-app">
+                    <h3>State of The Art Infrastructure</h3>
+                    <p>With reliability and speed in mind. 
+                        Worldwide data centers privide the
+                     backbone for ultra-fast connectivity. 
+                     This is ensures your site wil load instantly, 
+                     no matter whre your readers are, keeping your site competitive.</p>
+                </div>
+            </div>
+        </section>
+        <!-- features -->
+        <div class="feature-img">
+            
+            <img src="img/illustration-laptop-desktop.svg" class="laptop-desktop" alt="">
+        </div>
+        <section id="features">
+            <div class="features">
+                <img src="img/illustration-laptop-mobile.svg" class="laptop-mobile" alt="">
+                <div class="text-block">
+                    <h3>Free, open, simple</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                     Cumque, magnam enim corporis temporibus iste ab molestiae 
+                     voluptate eligendi expedita possimus placeat saepe laborum 
+                     doloribus, incidunt sunt! Molestias quam at sequi?
+                   </p>
+
+                    <h3>Powerful tooling</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                     Cumque, magnam enim corporis temporibus iste ab molestiae 
+                     voluptate eligendi expedita possimus placeat saepe laborum 
+                     doloribus, incidunt sunt! Molestias quam at sequi?
+                     </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div id="container">
+        <div class="footer">
+            <img src="img/logo.svg" class="brand" alt="">
+            <div>
+                <h3>Product</h3>
+             <ul>
+                 <li><a href="">Overview</a></li>
+                 <li><a href="">Pricing</a></li>
+                 <li><a href="">Marketplace</a></li> 
+                 <li><a href="">Features</a></li> 
+                 <li><a href="">Integrations</a></li> 
+             </ul>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+             <ul>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Team</a></li>
+                 <li><a href="">Blog</a></li> 
+                 <li><a href="">Careers</a></li>   
+             </ul>
+            </div>
+
+            <div>
+                <h3>Connect</h3>
+             <ul>
+                 <li><a href="">Contact</a></li>
+                 <li><a href="">Newspaper</a></li>
+                 <li><a href="">LinkedIn</a></li>  
+             </ul>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+<script>
+    function displayMenu() {
+        var link = document.getElementById("main-nav");
+        var link2 = document.getElementById("nav");
+        // var image = document.getElementById("hamburger").src="img/icon-close.svg";;
+        link.classList.toggle("mobile");     
+        link2.classList.toggle("humb");     
+    }
+</script>
+</html>

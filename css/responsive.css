@@ -1,0 +1,255 @@
+@media (min-width: 1440px) {
+    html {
+        font-size: 13px;
+    }
+     .hamburger {
+        display: none;
+    }
+    .nav {        
+        display: flex; 
+        justify-content: space-between; 
+        width: 85%;
+        margin: 0 auto;
+    }
+    #main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+        width: 100%;   
+    } 
+    #main-nav ul {
+        display: flex;
+    }
+    #main-nav ul .main-nav-item {
+        display: flex;
+        position: relative;
+    }
+    #main-nav ul .main-nav-item a:not(.dropdown a){
+        color: white; 
+    }
+    #main-nav .main-nav-items > li {
+        padding: 0 1.3rem;
+    }
+    #main-nav .dropdown {
+        display: none;
+        position: absolute;
+        top: 2rem;
+        color: black;
+        left: 0;
+        background-color: white;
+        padding: 2rem 3rem 2rem 1.3rem;
+        border-radius: .6rem;
+    } 
+    #main-nav ul li:hover > .dropdown,
+     .main-nav-items .main-nav-item .dropdown:hover {
+         display: block;
+         visibility: visible;
+         opacity: 1;
+     }
+    #main-nav .login.main-nav-item {
+        display: flex;
+        border: none;
+        padding: 0;
+        margin: 0; 
+    }
+    #main-nav .login {
+        justify-self: start;
+    }
+    .hero {
+        background-image: url("../img/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, var(--bg1), var(--bg2));
+        background-size: 160%, 110%;
+        background-position: 31% 51%, 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+    /* BUTTON AND HEADING ADJUSTMENT */
+    .login .btn {
+        padding: 1rem 2rem;
+    }
+    .btn {
+        font-size: 1.2rem;
+    }
+    .btn-login {
+        color: white;
+    }
+    .hero .brand {
+        height: 2.6rem;
+        padding-right: 2rem;
+    }
+    .hero h1 span {
+        display: inline-block;
+    }
+    .hero h1 {        
+        font-size: 4.2rem;
+    }
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    .btn-wrapper {
+        justify-content: center;
+    }
+    .btn-wrapper a {
+        margin: 0 .8rem;
+    }
+    /* ABOUT */ 
+    #about {
+        overflow: hidden; 
+        margin-top: 0;
+        padding: 2rem 0 10rem 0;
+    }
+    .about .editor-mobile{
+        display: none;
+    }
+    #about .about {
+        flex-direction: row; 
+        justify-content: end;
+        align-items: start;
+        text-align: left;
+    }
+    .about-img {
+        height: 5rem; 
+        margin-top: 2rem;
+        position: relative;    
+        z-index: 2;
+    }
+    .editor-desktop {  
+        position: absolute; 
+        left: 55%;   
+        width: 70rem !important;
+    } 
+    #about h1 {
+        font-size: 2.5rem;
+    }
+    #about .about .text-block h2 {
+        font-size: 1.6rem;
+    }
+    #about .about p {
+        font-size: 1.4rem;
+        text-align: left;
+        width: 500px;
+    }
+    /* APP */
+    #app {
+        background-image: url("../img/bg-pattern-circles.svg"), linear-gradient(to top, var(--bg3-blue), var(--bg4-blue));
+        background-position: -45% 85%; 
+        background-size: 515% cover;
+        background-repeat: no-repeat;
+    }
+    #app {        
+     height: 33rem;
+     margin-bottom: 9rem;
+     overflow: hidden;
+    }
+    #app .app {
+         align-items: end; 
+    }
+    #app .app .text-block-app {
+        width: 50%;  
+    }
+    #app .app h3 {
+        font-size: 2rem;
+        text-align: left;
+    }
+    #app .app p {
+        font-size: 1.3rem;
+        text-align: left;
+        width: 70%;
+    }
+    .appimg {
+        height: 4rem;
+    }
+    .appimg .phones {
+        width: 47rem;
+        top: -2rem;
+        left: 8rem;
+    }
+
+    
+ /* FEATURES */
+     #features { 
+        overflow: hidden; 
+        text-align: left; 
+    }
+    .feature-img { 
+        height: 5rem;
+        position: relative;
+        width: 100%;        
+        z-index: -1;
+    }
+    .features {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+    }
+    .feature-img img {
+        width: 76rem;
+    }
+    
+    .laptop-mobile {
+        display: none;
+    }
+    .laptop-desktop {
+        position: absolute;
+        left: -25rem;
+    } 
+    .features .text-block { 
+        padding-left: 35rem;
+    }
+    #features .features h3 {
+        font-size: 2rem;
+        text-align: left;
+    }
+    #features .features p {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 500px;
+    }
+    /* FOOTER */
+    footer {
+        overflow: hidden;
+        position: relative;
+        z-index: 4;
+        margin-top: 15rem;
+    }
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;  
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%; 
+    }
+    #container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .footer .brand {
+        align-self: start;
+        margin: 1.3rem 0;
+    } 
+    .footer > div {
+        flex-grow: 1; 
+        align-self: start;
+    }
+}
+@media (max-width: 375px) {
+    #about h1 {
+        font-size: 2.5rem;
+    }
+    .editor-desktop {
+        display: none;
+    }
+    #about .about h2 {
+        font-size: 2rem;
+    }
+
+    /* APP */
+    .appimg .phones {
+        top: 13rem;
+    }
+#app {
+    background-image: url("../img/bg-pattern-circles.svg"), linear-gradient(to top, var(--bg3-blue), var(--bg4-blue));
+    background-position: 45% 125%; 
+    background-size: 150% cover;
+    background-repeat: no-repeat;
+    }
+}
